@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DecryptionController">
+    <children>
+        <Label layoutX="196.0" layoutY="37.0" text="文件或字符串解密">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="59.0" layoutY="132.0" text="对称加密算法：" />
+        <ChoiceBox fx:id="SymEncryption" layoutX="151.0" layoutY="128.0" prefHeight="23.0" prefWidth="88.0" />
+        <Label layoutX="69.0" layoutY="171.0" text="Hash算法：" />
+        <ChoiceBox fx:id="HashAlgorithm" layoutX="151.0" layoutY="167.0" prefHeight="23.0" prefWidth="88.0" />
+        <Label layoutX="65.0" layoutY="214.0" text="接收者私钥：" />
+        <Button fx:id="ChoicePriKey" layoutX="150.0" layoutY="210.0" mnemonicParsing="false" onAction="#doChoicePriKey" text="选择私钥文件" />
+        <Label layoutX="65.0" layoutY="251.0" text="发送者公钥：" />
+        <Button fx:id="ChoicePubKey" layoutX="151.0" layoutY="247.0" mnemonicParsing="false" onAction="#doChoicePubKey" text="选择公钥文件" />
+        <Button fx:id="DecodeData" layoutX="338.0" layoutY="140.0" mnemonicParsing="false" onAction="#doDecodeData" prefHeight="45.0" prefWidth="203.0" text="解密数据" textAlignment="CENTER" textOverrun="CLIP">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Button>
+        <Button fx:id="Back" layoutX="531.0" layoutY="363.0" mnemonicParsing="false" onAction="#doBack" text="返回" />
+      <Button fx:id="CheckHash" layoutX="338.0" layoutY="211.0" mnemonicParsing="false" onAction="#doCheckHash" prefHeight="45.0" prefWidth="203.0" text="校验Hash" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="PlainText" layoutX="68.0" layoutY="296.0" prefHeight="90.0" prefWidth="450.0" />
+      <Label fx:id="PrivateKeyName" layoutX="247.0" layoutY="214.0" prefHeight="15.0" prefWidth="84.0" />
+      <Label fx:id="PublicKeyName" layoutX="247.0" layoutY="251.0" prefHeight="15.0" prefWidth="84.0" />
+    </children>
+</AnchorPane>

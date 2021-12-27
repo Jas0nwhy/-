@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GenerationController">
+   <children>
+      <SplitPane dividerPositions="0.17336683417085427" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="216.0" layoutY="15.0" text="RSA密钥生成">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="Back" layoutX="551.0" layoutY="4.0" mnemonicParsing="false" onAction="#DoBack" text="返回" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="229.0" prefWidth="387.0">
+               <children>
+                  <Label layoutX="27.0" layoutY="53.0" text="RSA公钥：">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="PublicKeyArea" layoutX="120.0" layoutY="53.0" prefHeight="75.0" prefWidth="451.0" />
+                  <Button fx:id="CopyUK" layoutX="174.0" layoutY="138.0" mnemonicParsing="false" onAction="#DoCopyUK" text="复制公钥">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="PrivateKeyArea" layoutX="121.0" layoutY="188.0" prefHeight="75.0" prefWidth="451.0" />
+                  <Label layoutX="28.0" layoutY="188.0" text="RSA私钥：">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="SaveUK" layoutX="329.0" layoutY="138.0" mnemonicParsing="false" onAction="#DoSaveUK" text="保存到文件">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="SaveRK" layoutX="329.0" layoutY="276.0" mnemonicParsing="false" onAction="#DoSaveRK" text="保存到文件">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CopyRK" layoutX="174.0" layoutY="276.0" mnemonicParsing="false" onAction="#DoCopyRK" text="复制私钥">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Generation" layoutX="242.0" mnemonicParsing="false" onAction="#DoGenerantion" prefHeight="47.0" prefWidth="114.0" text="随机生成">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

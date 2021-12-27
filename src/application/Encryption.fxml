@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EncryptionController">
+   <children>
+      <Label layoutX="196.0" layoutY="37.0" text="文件或字符串加密">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="PlainText" layoutX="59.0" layoutY="91.0" prefHeight="53.0" prefWidth="478.0" promptText="选择字符串加密，请在文本框输入明文" />
+      <Button fx:id="StrEncode" layoutX="126.0" layoutY="155.0" mnemonicParsing="false" onAction="#doStrEncode" text="字符串加密" />
+      <Button fx:id="FileEncode" layoutX="408.0" layoutY="155.0" mnemonicParsing="false" onAction="#doFileEncode" text="文件加密" />
+      <Label layoutX="59.0" layoutY="204.0" text="对称加密算法：" />
+      <ChoiceBox fx:id="SymEncryption" layoutX="151.0" layoutY="200.0" prefHeight="23.0" prefWidth="88.0" />
+      <Label layoutX="69.0" layoutY="243.0" text="Hash算法：" />
+      <ChoiceBox fx:id="HashAlgorithm" layoutX="151.0" layoutY="239.0" prefHeight="23.0" prefWidth="88.0" />
+      <Label layoutX="65.0" layoutY="286.0" text="发送者私钥：" />
+      <Button fx:id="ChoicePriKey" layoutX="150.0" layoutY="282.0" mnemonicParsing="false" onAction="#doChoicePriKey" text="选择私钥文件" />
+      <Label layoutX="65.0" layoutY="323.0" text="接收者公钥：" />
+      <Button fx:id="ChoicePubKey" layoutX="151.0" layoutY="319.0" mnemonicParsing="false" onAction="#doChoicePubKey" text="选择公钥文件" />
+      <Label layoutX="386.0" layoutY="199.0" text="对称加密算法密钥：" />
+      <TextField fx:id="SymKeyText" layoutX="338.0" layoutY="223.0" prefHeight="23.0" prefWidth="203.0" promptText="文本框中输入自定义对称加密密钥" />
+      <Button fx:id="SymKey" layoutX="340.0" layoutY="257.0" mnemonicParsing="false" onAction="#doSymKey" text="自定义密钥" />
+      <Button fx:id="SymKeySeed" layoutX="451.0" layoutY="257.0" mnemonicParsing="false" onAction="#doSymKeySeed" text="根据种子产生" />
+      <Button fx:id="EncodeData" layoutX="338.0" layoutY="301.0" mnemonicParsing="false" onAction="#doEncodeData" prefHeight="45.0" prefWidth="203.0" text="生成加密数据">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Back" layoutX="531.0" layoutY="363.0" mnemonicParsing="false" onAction="#doBack" text="返回" />
+      <Label fx:id="PrivatKeyName" layoutX="248.0" layoutY="286.0" prefHeight="15.0" prefWidth="72.0" />
+      <Label fx:id="PublicKeyName" layoutX="248.0" layoutY="323.0" prefHeight="15.0" prefWidth="72.0" />
+      <Label fx:id="FileName" layoutX="480.0" layoutY="159.0" prefHeight="15.0" prefWidth="84.0" />
+   </children>
+</AnchorPane>

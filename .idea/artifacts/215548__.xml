@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="215548-王皓宇-密码学大作业代码">
+    <output-path>$PROJECT_DIR$/out/artifacts/215548__</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="application.Menu" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="215548" />
+        <option name="updateMode" value="always" />
+        <option name="vendor" value="HaoyuWang" />
+        <option name="version" value="1.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="215548__.jar">
+        <element id="module-output" name="215548-王皓宇-密码学大作业代码" />
+      </element>
+      <element id="library" level="project" name="fastjson-1.2.78" />
+      <element id="library" level="module" name="JUnit5.4" module-name="215548-王皓宇-密码学大作业代码" />
+    </root>
+  </artifact>
+</component>

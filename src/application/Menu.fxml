@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <SplitPane dividerPositions="0.23243243243243245" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="104.0">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" layoutX="11.0" layoutY="229.0" text="密码学与安全协议" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="264.0" text="大作业">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="45.0" layoutY="343.0" text="王皓宇-215548" />
+                  <ImageView fitHeight="147.0" fitWidth="137.0" layoutX="16.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@校标.jpg" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="566.0">
+               <children>
+                  <Button fx:id="Encryption" alignment="CENTER" layoutX="77.0" layoutY="174.0" mnemonicParsing="false" onAction="#DoEncryption" prefHeight="82.0" prefWidth="116.0" text="加密">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Decryption" alignment="CENTER" layoutX="374.0" layoutY="174.0" mnemonicParsing="false" onAction="#DoDecryption" prefHeight="82.0" prefWidth="116.0" text="解密" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="About" alignment="CENTER" layoutX="374.0" layoutY="293.0" mnemonicParsing="false" onAction="#DoAbout" prefHeight="82.0" prefWidth="116.0" text="关于本程序">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Generation" alignment="CENTER" layoutX="77.0" layoutY="293.0" mnemonicParsing="false" onAction="#DoGeneration" prefHeight="82.0" prefWidth="116.0" text="非对称密钥生成" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="121.0" fitWidth="547.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@流程.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
